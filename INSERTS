@@ -1,0 +1,23 @@
+Insert into SYSTEM.USERS (ID,PROFILEIMAGE,USERNAME,TYPEUSER,NAME,EMAIL,PASSWORD,PHONENUMBER,GENDER,BIRTHDATE,COUNTRY) values ('1','https://imgur.com/x9N0I61','usuarioPrueba','1','Prueba','prueba@gmail.com','prueba123','3205053453','M',to_date('06/06/02','DD/MM/RR'),'Colombia');
+
+Insert into SYSTEM.PUBLICATIONS (ID,NAME,IDCATEGORY,IDLABELS,DESCRIPTION,IDUSER,BANNERIMAGE,PUBLISHEDAT) values ('1','Novedad en Test Game!','1','1','Se agregó el parche 2.0 al juego mejorando el nivel 1','1','https://imgur.com/x9N0I61',to_date('28/06/22','DD/MM/RR'));
+
+Insert into SYSTEM.GAMES (ID,IMAGE,NAME,DESCRIPTION,AUTHOR,IDLABELS,CALIFICATION) values ('1','https://imgur.com/x9N0I61','Test Game','Action test game','Carlos Matiz','1','5');
+
+Insert into SYSTEM.CUSTOMER_TICKETS (ID,TITLE,DESCRIPTION,IMAGES,FILES,IDUSER,IDGAME) values ('1','Inconveniente con juego','Me ocurrió el siguiente problema en el nivel 1','https://imgur.com/x9N0I61','https://imgur.com/x9N0I61','1','1');
+
+Insert into SYSTEM.VIEW_HISTORY (ID,IDUSER,IDPUBLICATION) values ('1','1','1');
+
+Insert into SYSTEM.SEARCH_HISTORY (ID,IDUSER,SEARCH) values ('1','1','God of war');
+
+Insert into SYSTEM.RATINGS (ID,IDGAME,IDUSER,STARS) values ('1','1','1','5');
+
+Insert into SYSTEM.FAVORITE_GAMES (ID,IDGAME,IDUSER) values ('1','1','1');
+
+Insert into SYSTEM.REACTIONS (ID,NAME,IDUSER,IDPUBLICATION) values ('1','Me gusta','1','1');
+
+Insert into SYSTEM.COMMENTS_PUBLICATIONS (ID,CONTENT,IDUSER,IDPUBLICATION) values ('1','Excelente publicación!','1','1');
+
+Insert into SYSTEM.FILTER_LABELS (ID,NAME,DESCRIPTION,COLOR,IDUSER,CREATIONDATE) values ('1','Parches','Búsqueda de publicaciones con parches','Red','1',to_date('28/06/22','DD/MM/RR'));
+
+Insert into SYSTEM.FILTER_CATEGORIES (ID,NAME,DESCRIPTION,IDUSER,CREATIONDATE) values ('1','Nuevo juego','Búsqueda de nuevos en juegos publicados','1',to_date('28/06/22','DD/MM/RR'));
